@@ -106,7 +106,7 @@
         colors = "/" + defaultBackground + "/" + defaultForeground;
       }
       
-      urlMessage = "/" + encodeURIComponent(data.message);
+      urlMessage = "/" + encodeURIComponent(data.message).replace(/'/g, "%27");;
     }
     
     // Build the URL
